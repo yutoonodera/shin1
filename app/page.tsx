@@ -211,21 +211,25 @@ export default function Home() {
         </section>
 
         {/* Profile */}
-        <section id="profile" className="bg-white py-20">
+        <section id="profile" className="bg-white py-20 md:py-24">
           <div className="mx-auto max-w-6xl px-5">
-            <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
-              <div>
-                <p className="text-sm font-bold tracking-[0.2em] text-[#a7792f]">
-                  PROFILE
-                </p>
-                <h2 className="mt-3 text-3xl font-black md:text-4xl">
-                  講師プロフィール
-                </h2>
+            <div className="mb-10">
+              <p className="text-sm font-bold tracking-[0.2em] text-[#a7792f]">
+                PROFILE
+              </p>
+              <h2 className="mt-3 text-3xl font-black md:text-4xl">
+                講師プロフィール
+              </h2>
+            </div>
 
-                <div className="mt-8 rounded-[2rem] border border-black/10 bg-[#fffaf0] p-7">
+            <div className="grid items-start gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+              {/* 左側：プロフィールカード */}
+              <div className="space-y-7">
+                <div className="rounded-[2rem] border border-black/10 bg-[#fffaf0] p-6 shadow-sm md:p-7">
                   <p className="text-sm font-bold text-[#a7792f]">
                     代表取締役 兼 講師
                   </p>
+
                   <h3 className="mt-3 text-3xl font-black">山田 紳一郎</h3>
                   <p className="mt-2 text-sm text-[#777]">Shinichiro Yamada</p>
 
@@ -234,7 +238,7 @@ export default function Home() {
                       src="/images/image7.jpg"
                       alt="山田紳一郎 講師"
                       fill
-                      sizes="(max-width: 768px) 100vw, 420px"
+                      sizes="(max-width: 768px) 100vw, 460px"
                       className="object-cover"
                     />
                   </div>
@@ -245,7 +249,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <p className="mt-8 leading-8 text-[#555]">
+                <p className="leading-8 text-[#555]">
                   小郡に生まれ、宝満川の近くで育つ。
                   みずほ銀行で支店勤務、本社マーケット部門を経験後、金融業界を一度離れてオーストラリアへ。
                   帰国後、地元福岡で金融の世界に戻り、IFAとして独立。
@@ -253,9 +257,10 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="rounded-[2rem] bg-[#f7f4ed] p-8">
-                <dl className="grid gap-5">
-                  <div className="border-b border-black/10 pb-4">
+              {/* 右側：経歴情報 */}
+              <div className="h-fit self-start rounded-[2rem] bg-[#f7f4ed] p-6 md:p-8">
+                <dl className="grid gap-6">
+                  <div className="border-b border-black/10 pb-5">
                     <dt className="text-sm font-bold text-[#a7792f]">経歴</dt>
                     <dd className="mt-2 leading-8 text-[#444]">
                       小郡市立御原小学校 → 小郡市立宝城中学校 →
@@ -264,18 +269,18 @@ export default function Home() {
                     </dd>
                   </div>
 
-                  <div className="border-b border-black/10 pb-4">
+                  <div className="border-b border-black/10 pb-5">
                     <dt className="text-sm font-bold text-[#a7792f]">資格</dt>
-                    <dd className="mt-2 text-[#444]">
+                    <dd className="mt-2 leading-8 text-[#444]">
                       日本証券アナリスト協会検定会員
                     </dd>
                   </div>
 
-                  <div className="border-b border-black/10 pb-4">
+                  <div className="border-b border-black/10 pb-5">
                     <dt className="text-sm font-bold text-[#a7792f]">
                       専門分野
                     </dt>
-                    <dd className="mt-2 text-[#444]">
+                    <dd className="mt-2 leading-8 text-[#444]">
                       外国為替、欧州通貨、インフレーション
                     </dd>
                   </div>
@@ -284,7 +289,7 @@ export default function Home() {
                     <dt className="text-sm font-bold text-[#a7792f]">
                       趣味・特技
                     </dt>
-                    <dd className="mt-2 text-[#444]">
+                    <dd className="mt-2 leading-8 text-[#444]">
                       テニス、旅行、中国式マッサージ
                     </dd>
                   </div>
