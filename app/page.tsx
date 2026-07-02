@@ -315,6 +315,10 @@ export default function Home() {
                 "株式会社みなさまの保険 福岡支店",
                 "株式会社C＆C",
                 "On association株式会社",
+                "J-LEAD協同組合",
+                "アスエール合同会社",
+                "株式会社J-Tackle",
+                "C&Cレーシング",
                 "一般の方向け研修 多数",
               ].map((item) => (
                 <div
